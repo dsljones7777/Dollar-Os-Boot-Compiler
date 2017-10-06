@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>exboot64 $kernel64.exe</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(TARGETPATH)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(USERPROFILE)\OneDrive\Cybernated Solutions\$os\Build\</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommand>$(USERPROFILE)\OneDrive\Cybernated Solutions\$os\Build\$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>BUILD\exboot64 BUILD\$kernel64.exe</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(USERPROFILE)\OneDrive\Cybernated Solutions\$os\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
